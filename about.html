@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Про нас — Країни Європи</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root {
+    --bg:#f4f4f9; --text:#333; --card:#fff;
+    --header:#333; --accent:#f4a261;
+}
+body.dark {
+    --bg:#1e1e1e; --text:#f1f1f1;
+    --card:#2a2a2a; --header:#000;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+    font-family:Arial,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+}
+header,footer{
+    background:var(--header);
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+nav a{color:white;text-decoration:none}
+nav a:hover{color:var(--accent)}
+section{
+    max-width:900px;
+    margin:60px auto;
+    padding:20px;
+    text-align:center;
+}
+.theme-btn{
+    margin-top:10px;
+    padding:8px 18px;
+    border:none;
+    border-radius:20px;
+    background:var(--accent);
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Про нас</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+    </nav>
+    <button class="theme-btn" onclick="toggleTheme()">🌙 Змінити тему</button>
+</header>
+
+<section>
+    <h2>Інформація про проєкт</h2>
+    <p>
+        Цей вебсайт створено як навчальний проєкт з інформатики.
+        Метою є ознайомлення з країнами Європи та демонстрація
+        навичок роботи з HTML, CSS та JavaScript.
+    </p>
+    <p style="margin-top:15px">
+        Проєкт містить навігацію, інтерактивні кнопки,
+        перемикання тем та окремі сторінки.
+    </p>
+</section>
+
+<footer>
+    <p>© 2025 Навчальний проєкт</p>
+</footer>
+
+<script>
+function toggleTheme(){
+    document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>

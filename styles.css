@@ -1,0 +1,46 @@
+/* Секція країн */
+.countries {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 30px;
+}
+
+/* Картка країни */
+.country-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Зображення */
+.country-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Назва країни */
+.country-card h3 {
+    font-size: 1.6rem;
+    margin: 15px 0 10px;
+    color: #2d3142;
+}
+
+/* Опис */
+.country-card p {
+    font-size: 1.05rem;
+    padding: 0 20px 20px;
+    flex-grow: 1;
+}
+
+/* Ефект наведення */
+.country-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
